@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% block title %}Portfolio — Pragya Parakh{% endblock %}
+{% block meta_desc %}Projects built by Pragya Parakh — web apps, APIs, e-commerce, and startup products.{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-label">My work</p>
+    <h1>Things I've<br><em>built & shipped.</em></h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Filter tabs (visual only — JS can wire these up later) -->
+    <div class="filter-tabs">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Web Apps</button>
+      <button class="filter-btn">APIs</button>
+      <button class="filter-btn">E-Commerce</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb--blue">
+          <div class="thumb-inner">
+            <span class="thumb-icon">💳</span>
+            <span class="thumb-label">Payments</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Flask</span>
+            <span class="ptag">PostgreSQL</span>
+          </div>
+          <h3>Payment Dashboard</h3>
+          <p>A real-time dashboard for tracking transactions, reconciliations, and dispute management — inspired by my work at Razorpay.</p>
+          <div class="project-footer">
+            <a href="#" class="proj-link">View project →</a>
+            <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb--green">
+          <div class="thumb-inner">
+            <span class="thumb-icon">🌱</span>
+            <span class="thumb-label">Startup MVP</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="ptag">React</span>
+            <span class="ptag">Flask API</span>
+            <span class="ptag">AWS</span>
+          </div>
+          <h3>Startup MVP — [NDA]</h3>
+          <p>Full product I co-built from 0 → 1. Designed the architecture, built the API, and launched the MVP to first users.</p>
+          <div class="project-footer">
+            <span class="proj-note">🔒 Under NDA — details on request</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb--orange">
+          <div class="thumb-inner">
+            <span class="thumb-icon">🛍️</span>
+            <span class="thumb-label">E-Commerce</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="ptag">Flask</span>
+            <span class="ptag">Razorpay API</span>
+            <span class="ptag">SQLite</span>
+          </div>
+          <h3>Boutique Store Template</h3>
+          <p>A complete e-commerce store with Razorpay checkout, inventory management, and an order admin panel. Built as a reusable template.</p>
+          <div class="project-footer">
+            <a href="#" class="proj-link">View project →</a>
+            <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb--purple">
+          <div class="thumb-inner">
+            <span class="thumb-icon">🔌</span>
+            <span class="thumb-label">API</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="ptag">FastAPI</span>
+            <span class="ptag">Redis</span>
+            <span class="ptag">Docker</span>
+          </div>
+          <h3>REST API Boilerplate</h3>
+          <p>Production-ready API starter with JWT auth, rate limiting, Redis caching, and Swagger docs. Used as a base for multiple client projects.</p>
+          <div class="project-footer">
+            <a href="#" class="proj-link">View project →</a>
+            <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb--teal">
+          <div class="thumb-inner">
+            <span class="thumb-icon">📊</span>
+            <span class="thumb-label">Dashboard</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="ptag">Flask</span>
+            <span class="ptag">Chart.js</span>
+            <span class="ptag">MySQL</span>
+          </div>
+          <h3>Analytics Dashboard</h3>
+          <p>Custom analytics tool for a SaaS product — tracks user actions, conversion funnels, and churn signals with live charts.</p>
+          <div class="project-footer">
+            <a href="#" class="proj-link">View project →</a>
+            <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb--dark">
+          <div class="thumb-inner">
+            <span class="thumb-icon">🤖</span>
+            <span class="thumb-label">Automation</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Celery</span>
+            <span class="ptag">SendGrid</span>
+          </div>
+          <h3>Email Automation Engine</h3>
+          <p>Behaviour-based email sequences triggered by user actions — onboarding, re-engagement, and transactional flows for a SaaS client.</p>
+          <div class="project-footer">
+            <a href="#" class="proj-link">View project →</a>
+            <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="portfolio-cta">
+      <p>Want to see code? Most of my personal projects are on GitHub.</p>
+      <div class="portfolio-cta-btns">
+        <a href="https://github.com" class="btn btn-ghost" target="_blank" rel="noopener">View GitHub ↗</a>
+        <a href="/contact" class="btn btn-primary">Discuss your project →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // Filter tab switching (visual only — wire to real data when you have real projects)
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+
+{% endblock %}

@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block title %}Pragya Parakh — Software Developer & Freelancer{% endblock %}
+
+{% block content %}
+
+<!-- ══ Hero ══════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="tag-dot"></span>
+      Available for freelance work
+    </div>
+
+    <h1 class="hero-headline">
+      I build software<br>
+      <em>that ships</em><br>
+      and <span class="hero-accent">scales.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Software developer with 3 years of experience — ex-Razorpay, currently building
+      an early-stage startup. I help businesses turn ideas into production-ready products.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/portfolio" class="btn btn-primary">See My Work</a>
+      <a href="/contact" class="btn btn-ghost">Get a Free Quote →</a>
+    </div>
+
+    <div class="hero-badges">
+      <span class="badge">Ex-Razorpay</span>
+      <span class="badge">3 yrs exp</span>
+      <span class="badge">Startup builder</span>
+      <span class="badge">Full-stack</span>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="code-window">
+      <div class="window-bar">
+        <span class="wdot r"></span>
+        <span class="wdot y"></span>
+        <span class="wdot g"></span>
+        <span class="window-title">pragya.py</span>
+      </div>
+      <div class="window-body">
+        <div class="code-line"><span class="c-kw">class</span> <span class="c-fn">Pragya</span>:</div>
+        <div class="code-line indent"><span class="c-str">"""Software developer &amp; builder."""</span></div>
+        <div class="code-line"></div>
+        <div class="code-line indent"><span class="c-kw">def</span> <span class="c-fn">__init__</span>(self):</div>
+        <div class="code-line indent2">self.role = <span class="c-str">"Full-stack Dev"</span></div>
+        <div class="code-line indent2">self.prev = <span class="c-str">"Razorpay"</span></div>
+        <div class="code-line indent2">self.exp  = <span class="c-num">3</span> <span class="c-cm"># years</span></div>
+        <div class="code-line indent2">self.open_to_work = <span class="c-kw">True</span></div>
+        <div class="code-line"></div>
+        <div class="code-line indent"><span class="c-kw">def</span> <span class="c-fn">build</span>(self, idea):</div>
+        <div class="code-line indent2"><span class="c-kw">return</span> Ship(idea, quality=<span class="c-str">"high"</span>)</div>
+        <div class="code-line blink-line"><span class="cursor">|</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Stats ═════════════════════════════════════════════════════════ -->
+<section class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat">
+      <span class="stat-n">3+</span>
+      <span class="stat-l">Years of experience</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat">
+      <span class="stat-n">10+</span>
+      <span class="stat-l">Projects shipped</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat">
+      <span class="stat-n">₹0</span>
+      <span class="stat-l">Hidden fees, ever</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat">
+      <span class="stat-n">24h</span>
+      <span class="stat-l">Response time</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Services snapshot ══════════════════════════════════════════════ -->
+<section class="section services-snap">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">What I do</p>
+      <h2 class="section-title">From idea to production,<br>end to end.</h2>
+    </div>
+
+    <div class="snap-grid">
+      <div class="snap-card">
+        <div class="snap-icon">🌐</div>
+        <h3>Web Applications</h3>
+        <p>Full-stack web apps built with Python, Flask, React — clean code, fast performance, ready to scale.</p>
+        <a href="/services" class="snap-link">Learn more →</a>
+      </div>
+      <div class="snap-card">
+        <div class="snap-icon">⚡</div>
+        <h3>API Development</h3>
+        <p>RESTful APIs and backend systems. From payment integrations to third-party services — I've built it.</p>
+        <a href="/services" class="snap-link">Learn more →</a>
+      </div>
+      <div class="snap-card">
+        <div class="snap-icon">🛍️</div>
+        <h3>E-Commerce Stores</h3>
+        <p>Custom online stores with secure payments, inventory management, and seamless checkout flows.</p>
+        <a href="/services" class="snap-link">Learn more →</a>
+      </div>
+      <div class="snap-card">
+        <div class="snap-icon">🚀</div>
+        <h3>Startup MVPs</h3>
+        <p>I've co-built an early-stage startup myself. I know how to move fast and prioritise what ships.</p>
+        <a href="/services" class="snap-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Social proof / testimonial strip ══════════════════════════════ -->
+<section class="trust-strip">
+  <div class="container">
+    <p class="trust-label">Trusted by founders, built at scale</p>
+    <div class="trust-logos">
+      <span class="trust-item">🏦 Razorpay — Payments at scale</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item">🌱 Early-stage startup — 0 → 1</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item">💼 3 years of production systems</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-text">
+        <h2>Ready to build something?</h2>
+        <p>Tell me about your project. I'll reply within 24 hours with a clear plan and honest pricing.</p>
+      </div>
+      <a href="/contact" class="btn btn-primary btn-lg">Start a Conversation →</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

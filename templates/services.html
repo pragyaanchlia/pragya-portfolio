@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% block title %}Services & Pricing — Pragya Parakh{% endblock %}
+{% block meta_desc %}Web development, API development, e-commerce and startup MVP services with transparent pricing.{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-label">Services & Pricing</p>
+    <h1>Transparent pricing.<br><em>No surprises.</em></h1>
+  </div>
+</section>
+
+<!-- ══ Packages ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Packages</p>
+      <h2 class="section-title">Pick what fits your stage.</h2>
+      <p class="section-desc">Every project gets the same attention to detail — packages just define scope.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Starter -->
+      <div class="pricing-card">
+        <div class="pricing-top">
+          <h3>Starter</h3>
+          <p>For landing pages & simple sites</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-currency">₹</span>
+          <span class="price-amount">25,000</span>
+        </div>
+        <ul class="pricing-list">
+          <li>✓ Up to 4 pages</li>
+          <li>✓ Mobile-responsive design</li>
+          <li>✓ Contact form</li>
+          <li>✓ Basic SEO setup</li>
+          <li>✓ Deployed & live</li>
+          <li>✓ Delivered in 7 days</li>
+          <li class="dim">✗ Custom backend logic</li>
+          <li class="dim">✗ Payment integration</li>
+        </ul>
+        <a href="/contact?package=starter" class="btn btn-outline btn-full">Get started →</a>
+      </div>
+
+      <!-- Professional — featured -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="featured-badge">Most Popular</div>
+        <div class="pricing-top">
+          <h3>Professional</h3>
+          <p>For serious web applications</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-currency">₹</span>
+          <span class="price-amount">65,000</span>
+        </div>
+        <ul class="pricing-list">
+          <li>✓ Up to 10 pages</li>
+          <li>✓ Custom backend with Python/Flask</li>
+          <li>✓ Database integration</li>
+          <li>✓ User login / auth</li>
+          <li>✓ Admin dashboard</li>
+          <li>✓ REST API</li>
+          <li>✓ Full SEO optimisation</li>
+          <li>✓ Delivered in 14–21 days</li>
+        </ul>
+        <a href="/contact?package=professional" class="btn btn-primary btn-full">Get started →</a>
+      </div>
+
+      <!-- E-Commerce -->
+      <div class="pricing-card">
+        <div class="pricing-top">
+          <h3>E-Commerce</h3>
+          <p>Full online store with payments</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-currency">₹</span>
+          <span class="price-amount">1,20,000</span>
+        </div>
+        <ul class="pricing-list">
+          <li>✓ Unlimited products</li>
+          <li>✓ Razorpay / Stripe payments</li>
+          <li>✓ Inventory & order management</li>
+          <li>✓ Email notifications</li>
+          <li>✓ Discount codes</li>
+          <li>✓ Analytics dashboard</li>
+          <li>✓ 30 days of support included</li>
+          <li>✓ Delivered in 3–4 weeks</li>
+        </ul>
+        <a href="/contact?package=ecommerce" class="btn btn-outline btn-full">Get started →</a>
+      </div>
+
+    </div>
+
+    <p class="pricing-note">
+      Building a startup MVP? <a href="/contact">Let's talk</a> — I offer custom scoping
+      for early-stage teams. Prices above are for India-based clients; international pricing available.
+    </p>
+  </div>
+</section>
+
+<!-- ══ What's always included ════════════════════════════════════════ -->
+<section class="section included-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Always included</p>
+      <h2 class="section-title">In every project I take on.</h2>
+    </div>
+    <div class="included-grid">
+      <div class="included-item">
+        <span>🔒</span>
+        <div>
+          <strong>Security best practices</strong>
+          <p>HTTPS, input validation, secure auth — not an afterthought.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span>📱</span>
+        <div>
+          <strong>Mobile-first design</strong>
+          <p>Looks great on every screen size, from day one.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span>🚀</span>
+        <div>
+          <strong>Deployment & hosting setup</strong>
+          <p>I'll get your project live — you don't need to figure that out alone.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span>📖</span>
+        <div>
+          <strong>Handover documentation</strong>
+          <p>Clear notes so you (or another developer) can maintain and extend it.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span>🔄</span>
+        <div>
+          <strong>Git version control</strong>
+          <p>Full history of every change. Your code is safe and trackable.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span>💬</span>
+        <div>
+          <strong>2 rounds of revisions</strong>
+          <p>Included in every package. We get it right together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Process ════════════════════════════════════════════════════════ -->
+<section class="section process-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">How it works</p>
+      <h2 class="section-title">Simple, structured, no fluff.</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="ps-num">01</div>
+        <h4>Discovery call</h4>
+        <p>We talk through your goals, timeline, and budget. Free, no commitment.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="ps-num">02</div>
+        <h4>Proposal & quote</h4>
+        <p>I send a clear written scope, timeline, and fixed price within 24 hours.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="ps-num">03</div>
+        <h4>Build & review</h4>
+        <p>I build in stages with regular check-ins. You see progress as it happens.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="ps-num">04</div>
+        <h4>Ship it</h4>
+        <p>Final delivery, deployed, documented, and handed over. You own everything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

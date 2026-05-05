@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Pragya Parakh — Software Developer{% endblock %}</title>
+  <meta name="description" content="{% block meta_desc %}Pragya Parakh — Software developer, ex-Razorpay, building products that scale.{% endblock %}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Epilogue:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── Noise overlay for texture ── -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ══ Navigation ══════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <span class="logo-pp">PP</span>
+        <span class="logo-name">Pragya Parakh</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" class="nav-link {% if request.endpoint == 'home' %}active{% endif %}">Home</a></li>
+        <li><a href="/about" class="nav-link {% if request.endpoint == 'about' %}active{% endif %}">About</a></li>
+        <li><a href="/services" class="nav-link {% if request.endpoint == 'services' %}active{% endif %}">Services</a></li>
+        <li><a href="/portfolio" class="nav-link {% if request.endpoint == 'portfolio' %}active{% endif %}">Work</a></li>
+        <li><a href="/contact" class="nav-cta">Let's Talk →</a></li>
+      </ul>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ══ Flash messages ═══════════════════════════════════════════════ -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="flash-wrap">
+        {% for category, message in messages %}
+          <div class="flash flash--{{ category }}">
+            <span>{{ message }}</span>
+            <button onclick="this.parentElement.remove()" aria-label="Dismiss">✕</button>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <!-- ══ Page content ═════════════════════════════════════════════════ -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ══ Footer ═══════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">Pragya Parakh</span>
+        <p>Building software that matters.<br>Available for freelance projects.</p>
+      </div>
+      <div class="footer-links-col">
+        <span class="footer-heading">Navigation</span>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/portfolio">Work</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div class="footer-links-col">
+        <span class="footer-heading">Connect</span>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="mailto:hello@pragya.dev">Email ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Pragya Parakh. All rights reserved.</span>
+      <span>Built with Python & Flask</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const links = document.getElementById('navLinks');
+      const btn   = document.getElementById('menuBtn');
+      links.classList.toggle('open');
+      btn.classList.toggle('open');
+    }
+    // Close nav on link click (mobile)
+    document.querySelectorAll('.nav-link, .nav-cta').forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+        document.getElementById('menuBtn').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

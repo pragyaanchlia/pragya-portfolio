@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block title %}Contact — Pragya Parakh{% endblock %}
+{% block meta_desc %}Get in touch with Pragya Parakh to discuss your web development project.{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-label">Contact</p>
+    <h1>Let's build<br><em>something together.</em></h1>
+  </div>
+</section>
+
+<section class="section contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- ── Form ── -->
+      <div class="contact-form-wrap">
+        <h2>Send a message</h2>
+        <p class="form-subhead">Tell me about your project — I'll reply within 24 hours with a clear plan and honest pricing.</p>
+
+        <form method="POST" action="/contact" class="contact-form" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your email *</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What are you looking for? *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a service…</option>
+              <option value="Web Application">Web Application</option>
+              <option value="E-Commerce Store">E-Commerce Store</option>
+              <option value="API Development">API Development</option>
+              <option value="Startup MVP">Startup MVP</option>
+              <option value="Landing Page">Landing Page</option>
+              <option value="Other">Other / Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Approximate budget</label>
+            <select id="budget" name="budget">
+              <option value="">Prefer not to say</option>
+              <option value="Under ₹25k">Under ₹25,000</option>
+              <option value="₹25k–₹65k">₹25,000 – ₹65,000</option>
+              <option value="₹65k–₹1.2L">₹65,000 – ₹1,20,000</option>
+              <option value="Above ₹1.2L">Above ₹1,20,000</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell me about your project *</label>
+            <textarea id="message" name="message" rows="6"
+              placeholder="What are you trying to build? Who's it for? Do you have a deadline? Any existing tech I should know about?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full btn-lg">Send Message →</button>
+        </form>
+      </div>
+
+      <!-- ── Info panel ── -->
+      <div class="contact-info">
+
+        <div class="info-card">
+          <span class="info-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:hello@pragya.dev">hello@pragya.dev</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-icon">⏱️</span>
+          <div>
+            <strong>Response time</strong>
+            <p>Within 24 hours on weekdays</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-icon">🌍</span>
+          <div>
+            <strong>Location</strong>
+            <p>India — working with clients worldwide</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-icon">💼</span>
+          <div>
+            <strong>LinkedIn</strong>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">Connect with me ↗</a>
+          </div>
+        </div>
+
+        <!-- FAQ accordion -->
+        <div class="faq-wrap">
+          <h3>Common questions</h3>
+
+          <details class="faq-item">
+            <summary>How does payment work?</summary>
+            <p>50% upfront to begin the project, 50% on final delivery. For larger projects I can arrange milestone-based payments.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How long will my project take?</summary>
+            <p>Starter sites take around 7 days. Professional web apps take 2–3 weeks. E-commerce projects are typically 3–4 weeks. I'll give you a firm timeline before we start.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I update the site myself after?</summary>
+            <p>Yes — I provide documentation and a short handover walkthrough so you can make basic updates confidently.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you work with international clients?</summary>
+            <p>Absolutely. I work with clients globally and accept international payments. Pricing is adjusted accordingly.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What if I'm not happy with the result?</summary>
+            <p>Every project includes 2 rounds of revisions. I don't consider a project done until you're satisfied with it.</p>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
